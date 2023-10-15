@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="se">
+            <div class="lbl">
+                Credit card details
+            </div>
+            <div class="info">
+                <div class="inputs">
+                    <div class="input_name">
+                    Card number
+                    </div>
+                    <input class="num" type="tel" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="1234 5678 9012 3456">
+
+                    <div class="input_name">
+                        Name on card
+                    </div>
+                    <input type="text" placeholder="Name Surname" class="name">
+
+                    <div class="input_secret">
+                        <div class="input_name">
+                            Expiry date
+                        </div>
+                        <div>&nbsp;</div>
+                        <div class="input_name input_caps">
+                            cvv/cvn
+                        </div>
+                        <input class="input_small" type="tel" pattern="[0-9\s]{13,19}" maxlength="2" placeholder="02" id="date1"> 
+                        <input class="input_small" type="tel" pattern="[0-9\s]{13,19}" maxlength="4" placeholder="2017" id="date2"> 
+                        <input class="input_small" type="password" pattern="[0-9\s]{13,19}" maxlength="3" placeholder="***" id="cvv"> 
+                    </div>
+                       
+                </div>
+            </div>
+        </section>
+        <div class="adds">
+            <span>Перекрасить карту: </span>
+            <input type="color" name="" id="i1" value="#729c9e">
+            <button class="bcolor">Color</button>
+            <br><br>
+            <span>Перекрасить текст: </span>
+            <input type="color" name="" id="i2" value="#466c6f">
+            <button class="tcolor">Color</button>
+            <br><br>
+            <button class="inf">Вывести введенную информацию</button> 
+        </div>
+        
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
